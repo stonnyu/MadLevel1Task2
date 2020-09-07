@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MadLevel1Task2</string>
+    <string name="quiz_name">Conjunction (AND)</string>
+    <string name="submit_button">submit</string>
+    <string name="answer_one" />
+    <string name="bold_text_column_1">A</string>
+    <string name="bold_text_column_2">B</string>
+    <string name="bold_text_column_3">A ^ B</string>
 </resources>
