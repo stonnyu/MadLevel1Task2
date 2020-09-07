@@ -8,4 +8,7 @@
     <string name="bold_text_column_3">A ^ B</string>
     <string name="label_true">T</string>
     <string name="label_false">F</string>
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="solution">TFFF</string>
 </resources>
