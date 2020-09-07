@@ -16,12 +16,16 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="409dp"
-        android:layout_height="389dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:baselineAligned="false"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,66 +33,141 @@
         app:layout_constraintTop_toBottomOf="@+id/lblQuiz">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:orientation="horizontal">
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textBold"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
+                android:ems="4"
                 android:text="@string/bold_text_column_1"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblTrue1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="false"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/label_true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblTrue3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="false"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/label_true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblFalse2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elegantTextHeight="false"
+                android:gravity="center"
+                android:text="@string/label_false"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblFalse3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="false"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/label_false"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
             android:layout_weight="2"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textBold2"
-                android:layout_width="wrap_content"
+                android:ems="4"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
+                android:gravity="center"
                 android:text="@string/bold_text_column_2"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
+                android:id="@+id/lblTrue2"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:elegantTextHeight="false"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:gravity="center"
+                android:text="@string/label_true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblFalse1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="false"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/label_false"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblTrue4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="false"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/label_true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lblFalse4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elegantTextHeight="false"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/label_false"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
             android:layout_weight="3"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textBold3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
+                android:gravity="center"
                 android:text="@string/bold_text_column_3"
-                android:textSize="36sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/etAnswer1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:digits="TF"
-                android:ems="10"
+                android:gravity="center"
                 android:inputType="textShortMessage"
                 android:maxLength="1" />
 
@@ -96,9 +175,8 @@
                 android:id="@+id/etAnswer2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
                 android:digits="TF"
-                android:ems="10"
+                android:gravity="center"
                 android:inputType="textShortMessage"
                 android:maxLength="1" />
 
@@ -106,9 +184,8 @@
                 android:id="@+id/etAnswer3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
                 android:digits="TF"
-                android:ems="10"
+                android:gravity="center"
                 android:inputType="textShortMessage"
                 android:maxLength="1" />
 
@@ -116,11 +193,11 @@
                 android:id="@+id/etAnswer4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
                 android:digits="TF"
+                android:gravity="center"
                 android:inputType="textShortMessage"
-                android:maxLength="1"
-                android:textSize="8sp" />
+                android:maxLength="1" />
+
         </LinearLayout>
 
     </LinearLayout>

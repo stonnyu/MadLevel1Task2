@@ -6,4 +6,6 @@
     <string name="bold_text_column_1">A</string>
     <string name="bold_text_column_2">B</string>
     <string name="bold_text_column_3">A ^ B</string>
+    <string name="label_true">T</string>
+    <string name="label_false">F</string>
 </resources>
